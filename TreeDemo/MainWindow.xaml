@@ -37,11 +37,7 @@
         <Grid Margin="20">
             <local:TreeDataGrid ItemsSource="{Binding Items,Converter={StaticResource TreeItemDataConverter},ConverterParameter=Items}"
                          AutoGenerateColumns="False"
-                         CanUserAddRows="False"
-                         CanUserDeleteRows="False"
-                         HorizontalGridLinesBrush="Gray"
-                                VerticalGridLinesBrush="Gray"
-                                >
+                         CanUserAddRows="False">
                 <local:TreeDataGrid.Resources>
                     <Style TargetType="local:TreeDataGridRow">
                         <Setter Property="Margin" Value="0"/>
@@ -59,10 +55,6 @@
                 </local:TreeDataGrid.Resources>
                 <local:TreeDataGrid.Columns>
                     <DataGridTemplateColumn Header="Name" CellTemplate="{StaticResource CellTemplate_Name}"/>
-                    <DataGridTextColumn Header="P1" Binding="{Binding Data.P1}" Width="200"/>
-                    <DataGridTextColumn Header="P2" Binding="{Binding Data.P2}"  Width="200"/>
-                    <DataGridTextColumn Header="P3" Binding="{Binding Data.P3}"  Width="200"/>
-                    <DataGridTextColumn Header="P4" Binding="{Binding Data.P4}"  Width="200"/>
                 </local:TreeDataGrid.Columns>
             </local:TreeDataGrid>
         </Grid>
