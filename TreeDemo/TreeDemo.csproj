@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controls\TreeGrid.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Asserts\Images\SOLIDWORKSSLDASM.gif" />
+    <None Remove="Asserts\Images\SOLIDWORKSSLDPRT.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Themes\TreeGrid.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Asserts\Images\SOLIDWORKSSLDASM.gif" />
+    <Resource Include="Asserts\Images\SOLIDWORKSSLDPRT.gif" />
+  </ItemGroup>
+
+</Project>
